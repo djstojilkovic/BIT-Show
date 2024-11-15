@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(182, 179, 179);
+}
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+.head {
+  background-color: rgb(54, 53, 53);
+  color: white;
+  font-size: 25px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.head > input {
+  position: relative;
+  left: 40px;
+}
+.head > h4 {
+  position: relative;
+  right: 43px;
+}
+.footer {
+  background-color: rgb(54, 53, 53);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+}
+.shows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-self: center;
+  align-content: center;
+  width: 55%;
+  margin: 20px;
+}
+.shows > div {
+  width: 30%;
+  border: 1px solid black;
+  margin: 15px;
+}
+.shows > div > img {
+  width: 100%;
+}
+.shows > div > p {
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(15, 103, 159);
+}
