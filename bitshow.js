@@ -3,6 +3,9 @@ const showContainer = document.querySelector(".shows");
 const src = document.querySelector(".search");
 const searchDiv = document.querySelector(".src");
 const result = document.querySelector(".result");
+const pathnamePrefix =
+  location.host === "djstojilkovic.github.io" ? "/BIT-Show" : "/";
+
 window.addEventListener("load", getShows);
 function getShows() {
   fetch(URL)
@@ -30,7 +33,7 @@ function showShows(data) {
     showImg.addEventListener("click", () => {
       window.localStorage.removeItem("showInfo");
       window.localStorage.setItem("showInfo", JSON.stringify(e));
-      window.location.pathname += "info.html";
+      window.location.pathname = `${pathnamePrefix}/info.html`;
     });
 
     const showDiv = document.createElement("div");
@@ -60,7 +63,7 @@ function srcShows(data) {
     srcTxt.addEventListener("click", () => {
       window.localStorage.removeItem("showInfo");
       window.localStorage.setItem("showInfo", JSON.stringify(e.show));
-      window.location.pathname = "./info.html";
+      window.location.pathname = `${pathnamePrefix}/info.html`;
     });
   });
 }
