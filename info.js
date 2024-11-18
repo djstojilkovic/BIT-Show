@@ -34,7 +34,7 @@ window.addEventListener("load", () => {
 });
 
 head.addEventListener("click", () => {
-  window.location.pathname = = `${pathnamePrefix}/index.html`;;
+  window.location.pathname = `${pathnamePrefix}/index.html`;
 });
 
 function showShows(data) {
@@ -45,7 +45,7 @@ function showShows(data) {
     showImg.addEventListener("click", () => {
       window.localStorage.removeItem("showInfo");
       window.localStorage.setItem("showInfo", JSON.stringify(e));
-      window.location.pathname = `${pathnamePrefix}/info.html`;;
+      window.location.pathname = `${pathnamePrefix}/info.html`;
     });
     const showDiv = document.createElement("div");
     showDiv.append(showImg);
