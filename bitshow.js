@@ -30,7 +30,7 @@ function showShows(data) {
     showImg.addEventListener("click", () => {
       window.localStorage.removeItem("showInfo");
       window.localStorage.setItem("showInfo", JSON.stringify(e));
-      window.location.pathname = "info.html";
+      window.location.pathname += "info.html";
     });
 
     const showDiv = document.createElement("div");
