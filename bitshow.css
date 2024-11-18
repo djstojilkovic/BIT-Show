@@ -2,13 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Simbiot;
+}
+@font-face {
+  font-family: "Simbiot";
+  src: url("./Simbiot.ttf");
 }
 body {
   background-color: rgb(182, 179, 179);
+  background-image: url("https://minibackground.com/wp-content/uploads/2019/01/Galatro-grain.jpg");
 }
 h1 {
   text-align: center;
-  margin: 20px;
+  margin: 30px;
+  font-size: 40px;
+  color: white;
 }
 .head {
   background-color: rgb(54, 53, 53);
@@ -22,6 +30,10 @@ h1 {
 .head > input {
   position: relative;
   left: 40px;
+}
+.search {
+  padding: 10px;
+  padding-left: 5px;
 }
 .head > h4 {
   position: relative;
@@ -41,18 +53,46 @@ h1 {
   justify-self: center;
   align-content: center;
   width: 55%;
-  margin: 20px;
+  margin: 50px;
+  background-color: rgb(120, 124, 124);
+  border-radius: 10px;
+  box-shadow: 90px -20px rgb(69, 156, 156);
 }
 .shows > div {
   width: 30%;
-  border: 1px solid black;
   margin: 15px;
+  border-radius: 10px;
 }
 .shows > div > img {
   width: 100%;
+  /* padding: 15px; */
+  border-radius: 10px;
+}
+.shows > div > img:hover {
+  cursor: pointer;
+  box-shadow: 15px 15px 15px rgb(230, 230, 230);
 }
 .shows > div > p {
   padding: 10px;
-  font-size: 20px;
-  color: rgb(15, 103, 159);
+  font-size: 14px;
+  color: whitesmoke;
+}
+.result {
+  height: 0px;
+  background-color: azure;
+  width: 222px;
+  position: absolute;
+}
+.result > p {
+  background-color: whitesmoke;
+  font-size: 18px;
+  color: black;
+  border-bottom: 1px solid black;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 8px;
+  padding: 3px;
+}
+.result > p:hover {
+  background-color: lightgray;
+  cursor: pointer;
 }

@@ -3,25 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Simbiot";
+  src: url("./Simbiot.ttf");
+}
 body {
   background-color: rgb(182, 179, 179);
+  background-image: url("https://minibackground.com/wp-content/uploads/2019/01/Galatro-grain.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .head {
   background-color: rgb(54, 53, 53);
   color: white;
   font-size: 25px;
-  padding: 7px;
+  padding: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  font-family: Simbiot;
 }
 .head > input {
   position: relative;
   left: 40px;
 }
+.search {
+  padding: 10px;
+  padding-left: 5px;
+  font-family: Simbiot;
+}
 .head > h4 {
   position: relative;
   right: 43px;
+  cursor: pointer;
+}
+.head > h4:hover {
+  color: rgb(69, 156, 156);
 }
 .footer {
   background-color: rgb(54, 53, 53);
@@ -29,12 +46,19 @@ body {
   font-size: 20px;
   text-align: center;
   padding: 32px;
+  font-family: Simbiot;
 }
 .info-container {
   display: flex;
   flex-wrap: wrap;
   width: 55%;
   margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  color: white;
+  background-color: rgb(120, 124, 124);
+  border-radius: 10px;
+  box-shadow: 90px -20px rgb(69, 156, 156);
 }
 .name {
   text-align: center;
@@ -43,9 +67,13 @@ body {
 .img {
   width: 85%;
   margin-top: 20px;
+  border-radius: 10px;
 }
 .info-right {
   margin-top: 100px;
+}
+.info-right > h2 {
+  font-family: Simbiot;
 }
 .info-right > p {
   padding: 5px;
@@ -54,10 +82,32 @@ body {
 .info-left {
   width: 400px;
 }
+.name {
+  font-family: Simbiot;
+}
 .info-summary {
   font-size: 20px;
   padding-top: 40px;
 }
+.info-summary > h2 {
+  font-family: Simbiot;
+}
 .info-summary > p {
   padding-top: 20px;
+}
+.result {
+  height: 0px;
+  background-color: azure;
+  width: 187px;
+  position: absolute;
+}
+.result > p {
+  background-color: whitesmoke;
+  font-size: 16px;
+  color: black;
+  border-bottom: 1px solid black;
+}
+.result > p:hover {
+  background-color: lightgray;
+  cursor: pointer;
 }
